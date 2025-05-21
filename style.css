@@ -11,6 +11,14 @@ body {
     margin: 50px;
   }
   
+  a{
+    color: rgb(33, 21, 21);
+    background-color: rgb(228, 222, 210);
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid rgb(13, 41, 100);
+}
+  
   .game-area {
     width: 80%;
     border-radius: 10px;
