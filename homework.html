@@ -8,14 +8,15 @@
     <style>
         body {
             background-color:  #f6f8f6; /* 設定整個頁面的背景顏色 */
-            margin: 0;
-            padding: 0;
+            text-align: center;
           }
         div#myId {
-            display: inline-block;
             background-color: rgb(217, 221, 224);
             padding: 10px;
             margin-top: 20px;
+            width: fit-content;
+            display: none;
+            margin: 0 auto; /* 置中對齊 */
         }
         table, tr,  td {
             border: 1px solid rgb(218, 168, 168);
@@ -54,6 +55,7 @@
             str+="</table>";
 
             document.getElementById("myId").innerHTML = str;
+            document.getElementById("myId").style.display = "block"; // 顯示表格
         }
     </script>
 </head>
