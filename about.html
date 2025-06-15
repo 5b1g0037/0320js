@@ -6,45 +6,44 @@
   <title>關於我的資訊</title>
   <style>
     body {
-      background-color: #f6f8f6; /* 設定整個頁面的背景顏色 */
+      background-color: #f6f8f6; /* 整個頁面背景顏色 */
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif; /* 設定字型 */
+      font-family: Arial, sans-serif; /* 字型 */
     }
     .container {
-      position: relative; /* 設定容器為相對定位 */
+      position: relative; /* 相對定位 */
       display: flex;
-      flex-direction: column; /* 調整為垂直排列 */
-      padding: 30px; /* 調整容器內邊距 */
-      max-width: 850px; /* 限制容器寬度 */
-      margin: 0 auto; /* 置中容器 */
-      background-color: #deecef; /* 設定容器背景顏色 */
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 增加陰影效果 */
-      border-radius: 10px; /* 圓角效果 */
+      flex-direction: column; /* 垂直排列 */
+      padding: 30px; /* 內邊距 */
+      max-width: 850px; /* 寬度 */
+      margin: 0 auto; /* 置中 */
+      background-color: #deecef; /* 背景顏色 */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 陰影效果 */
+      border-radius: 10px; /* 圓角 */
     }
     .info-box {
       display: flex;
-      justify-content: space-between; /* 讓文字靠左 */
+      justify-content: space-between; /* 文字靠左 */
       align-items: center; /* 垂直置中 */
       gap: 20px; /* 調整文字與其他內容的間距 */
     }
     .text-content {
-      flex: 10; /* 讓文字內容占據剩餘空間 */
       text-align: left; /* 文字靠左對齊 */
       margin-left: 80px; /* 調整文字與容器左邊的距離 */
     }
     a {
       display: inline-block;
-      margin: 5px;
-      color: #b1a1ca;
-      font-weight: bold;
+      margin: 5px;  /* 連結之間的邊距 */
+      color: #b1a1ca; /* 連結文字顏色 */
+      font-weight: bold;  /*粗體 */
     }
     .profile-image {
-      position: absolute; /* 設定圖片為絕對定位 */
+      position: absolute; /* 圖片為絕對定位 */
       top: 80px; /* 距離容器頂部10px */
       right: 100px; /* 距離容器右側10px */
-      width: 190px; /* 設定圖片寬度 */
-      height: 250px; /* 設定圖片高度 */
+      width: 190px; /* 圖片寬度 */
+      height: 250px; /* 圖片高度 */
       object-fit: cover; /* 確保圖片內容適配容器 */
       border-radius: 15px; /* 圓角效果 */
     }

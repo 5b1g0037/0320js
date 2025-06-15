@@ -7,54 +7,51 @@
     <title>Javascript作業</title>
     <style>
         body {
-            background-color:  #ecf4f2; /* 設定整個頁面的背景顏色 */
-            text-align: center;
+            background-color:  #ecf4f2; /* 整個頁面的背景顏色 */
+            text-align: center; /* 文字置中 */
           }
         div#myId {
-            background-color: rgb(217, 221, 224);
-            padding: 10px;
-            margin-top: 20px;
-            width: fit-content;
-            display: none;
+            background-color: rgb(217, 221, 224);   /* 背景顏色 */
+            width: fit-content; /* 寬度適合內容 */
             margin: 0 auto; /* 置中對齊 */
         }
         table, tr,  td {
-            border: 1px solid rgb(8, 8, 8);
-            border-collapse: collapse;
+            border: 1px solid rgb(8, 8, 8); /* 邊框樣式 */
+            border-collapse: collapse;  /* 合併表格邊框 */
         }
         table{
-            text-align: center;
-            margin: 0 auto;
+            text-align: center; /* 表格內容置中 */
+            margin: 0 auto; /* 表格置中 */
         }
         td {
-            padding: 5px;
-            text-align: center;
+            padding: 5px;   /* 設定單元格的內邊距 */
+            text-align: center; /* 將單元格內容置中 */
         }
         a{
-            color:#b1a1ca;;
-            background-color: #deecef;
-            text-decoration: none;
-            padding: 10px;
-            border: 2px solid rgb(13, 41, 100);
+            color: #b1a1ca; /* 連結文字顏色 */
+            background-color: #deecef;  /* 連結背景顏色 */
+            text-decoration: none;  /* 移除連結底線 */
+            padding: 10px;  /* 連結框框大小 */
+            border: 2px solid rgb(13, 41, 100); /* 連結的邊框樣式 */
         }
     </style>
     <script>
         function myFunciton() {
             var n = document.getElementById('numberInput').value;
-            //alert("輸入的數值是:" + n);
+            /* 取得使用者輸入的數值 */
 
             var str = "<table>";
 
             for (let i = 1; i <= n; i++) {
                 str+="<tr>";
                 for (let j = 1; j <= n; j++) {
-                    str+=`<td> ${i} * ${j} = ${i*j}</td>`;
+                    str+=`<td> ${i} * ${j} = ${i*j}</td>`; /*建立表格的單元格，顯示乘法結果*/
                 }
                 str+="</tr>";
             }
             str+="</table>";
 
-            document.getElementById("myId").innerHTML = str;
+            document.getElementById("myId").innerHTML = str; /*將生成的表格插入div中*/
             document.getElementById("myId").style.display = "block"; // 顯示表格
         }
     </script>
