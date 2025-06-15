@@ -14,13 +14,19 @@
     .container {
       display: flex;
       flex-direction: column; /* 調整為垂直排列 */
-      gap: 20px;
-      padding: 20px;
-      max-width: 600px; /* 限制容器寬度 */
+      gap: 0px; /* 調整容器內部元素的間距 */
+      padding: 10px;
+      max-width: 900px; /* 限制容器寬度 */
+      max-height: 900px; /* 限制容器高度 */
       margin: 0 auto; /* 置中容器 */
-      background-color: #ffffff; /* 設定容器背景顏色 */
+      background-color: #e4ead9; /* 設定容器背景顏色 */
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 增加陰影效果 */
-      border-radius: 8px; /* 圓角效果 */
+      border-radius: 10px; /* 圓角效果 */
+    }
+    .info-box {
+      display: flex;
+      align-items: center; /* 垂直置中 */
+      gap: 40px; /* 調整圖片與文字的間距 */
     }
     .info-box h1, .info-box h2, .info-box h3 {
       color: #333333; /* 標題文字顏色 */
@@ -40,31 +46,52 @@
     a:hover {
       text-decoration: underline; /* 滑鼠移過時的效果 */
     }
+    .profile-image {
+      width: 190px; /* 設定圖片寬度 */
+      height: 250px; /* 設定圖片高度，與寬度相等 */
+      object-fit: cover; /* 確保圖片內容適配容器 */
+      margin-left: 300px; /* 調整圖片與文字的距離 */
+    }
+    .h2{
+      margin-top: 10px; /* 調整標題與上方內容的距離 */
+    }
   </style>
 </head>
 <body>
   <a href="index.html">回首頁</a> <!-- 回首頁 -->
   <div class="container">
     <div class="info-box">
-      <h1>個人資料</h1>
-      <p>姓名: 王淮錡</p>
-      <p>性別: 女</p>
-      <p>生日: 2007/07/12</p>
-      <p>星座: 巨蟹座</p>
-      <p>興趣: 打排球或羽球</p>
-
-      <h2>學校</h2>
-      <p>就讀: 南台科技大學</p>
-      <p>科系: 資訊工程系</p>
-
-      <h2>聯絡方式</h2>
-      <p>電話: 0972-733-312</p>
-      <p>Email:<a href="mailto:aa0972733312@gmail.com">aa0972733312@gmail.com</a></p>
-
-      <h3>其他</h3>
-      <p>愛好: 聽音樂、做手作、打球</p>
-      <p>目標: 找到一份穩定工作、到世界各地玩</p>
+      <!-- 圖片放在文字右側 -->
+      <div class="text-content">
+        <ul>
+          <h2>個人資料</h2>
+          <li>姓名: 王淮錡</li>
+          <li>性別: 女</li>
+          <li>生日: 2007/07/12</li>
+          <li>星座: 巨蟹座</li>
+          <li>興趣: 打排球或羽球</li>
+        </ul>
+      </div>
+      <img src="我.jpg" alt="個人照片" class="profile-image" />
     </div>
+
+    <h2>學校</h2>
+    <ul>
+      <li>就讀: 南台科技大學</li>
+      <li>科系: 資訊工程系</li>
+    </ul>
+
+    <h2>聯絡方式</h2>
+    <ul>
+      <li>電話: 0972-733-312</li>
+      <li>Email: <a href="mailto:aa0972733312@gmail.com">aa0972733312@gmail.com</a></li>
+    </ul>
+
+    <h2>其他</h2>
+    <ul>
+      <li>愛好: 聽音樂、做手作、打球</li>
+      <li>目標: 找到一份穩定工作、到世界各地玩</li>
+    </ul>
   </div>
 </body>
 </html>
