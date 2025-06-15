@@ -12,86 +12,91 @@
       font-family: Arial, sans-serif; /* 設定字型 */
     }
     .container {
+      position: relative; /* 設定容器為相對定位 */
       display: flex;
       flex-direction: column; /* 調整為垂直排列 */
-      gap: 0px; /* 調整容器內部元素的間距 */
-      padding: 10px;
-      max-width: 900px; /* 限制容器寬度 */
-      max-height: 900px; /* 限制容器高度 */
+      padding: 30px; /* 調整容器內邊距 */
+      max-width: 850px; /* 限制容器寬度 */
       margin: 0 auto; /* 置中容器 */
-      background-color: #e4ead9; /* 設定容器背景顏色 */
+      background-color: #deecef; /* 設定容器背景顏色 */
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 增加陰影效果 */
       border-radius: 10px; /* 圓角效果 */
     }
     .info-box {
       display: flex;
+      justify-content: space-between; /* 讓文字靠左 */
       align-items: center; /* 垂直置中 */
-      gap: 40px; /* 調整圖片與文字的間距 */
+      gap: 20px; /* 調整文字與其他內容的間距 */
     }
-    .info-box h1, .info-box h2, .info-box h3 {
-      color: #333333; /* 標題文字顏色 */
-      margin-bottom: 10px;
-    }
-    .info-box p {
-      color: #555555; /* 內容文字顏色 */
-      margin: 5px 0;
+    .text-content {
+      flex: 10; /* 讓文字內容占據剩餘空間 */
+      text-align: left; /* 文字靠左對齊 */
+      margin-left: 80px; /* 調整文字與容器左邊的距離 */
     }
     a {
       display: inline-block;
-      margin: 20px;
-      text-decoration: none;
-      color: #007BFF; /* 超連結顏色 */
+      margin: 5px;
+      color: #b1a1ca;
       font-weight: bold;
     }
-    a:hover {
-      text-decoration: underline; /* 滑鼠移過時的效果 */
-    }
     .profile-image {
+      position: absolute; /* 設定圖片為絕對定位 */
+      top: 80px; /* 距離容器頂部10px */
+      right: 100px; /* 距離容器右側10px */
       width: 190px; /* 設定圖片寬度 */
-      height: 250px; /* 設定圖片高度，與寬度相等 */
+      height: 250px; /* 設定圖片高度 */
       object-fit: cover; /* 確保圖片內容適配容器 */
-      margin-left: 300px; /* 調整圖片與文字的距離 */
+      border-radius: 15px; /* 圓角效果 */
     }
-    .h2{
-      margin-top: 10px; /* 調整標題與上方內容的距離 */
+    h2 {
+      text-align: left; /* 標題靠左對齊 */
+      margin: 8px 0; /* 調整標題上下間距 */
+      line-height: 1.5; /* 調整標題行距 */
+    }
+    ul {
+      padding: 0; /* 移除內部間距 */
+      margin: 8px 0; /* 調整列表的上下間距 */
+      list-style-type: disc; /* 恢復列表符號為圓點 */
+    }
+    li {
+      margin: 3px 0; /* 調整列表項的上下間距 */
+      line-height: 1.6; /* 調整列表項的行距 */
     }
   </style>
 </head>
 <body>
   <a href="index.html">回首頁</a> <!-- 回首頁 -->
   <div class="container">
+    <!-- 圖片放在右上角 -->
+    <img src="我.jpg" alt="個人照片" class="profile-image" />
     <div class="info-box">
-      <!-- 圖片放在文字右側 -->
+      <!-- 文字靠左 -->
       <div class="text-content">
+        <h2>個人資料</h2>
         <ul>
-          <h2>個人資料</h2>
           <li>姓名: 王淮錡</li>
           <li>性別: 女</li>
           <li>生日: 2007/07/12</li>
           <li>星座: 巨蟹座</li>
           <li>興趣: 打排球或羽球</li>
         </ul>
+        <h2>學校</h2>
+        <ul>
+          <li>就讀: 南台科技大學</li>
+          <li>科系: 資訊工程系</li>
+        </ul>
+        <h2>聯絡方式</h2>
+        <ul>
+          <li>電話: 0972-733-312</li>
+          <li>Email: <a href="mailto:aa0972733312@gmail.com">aa0972733312@gmail.com</a></li>
+        </ul>
+        <h2>其他</h2>
+        <ul>
+          <li>愛好: 聽音樂、做手作、打球</li>
+          <li>目標: 找到一份穩定工作、到世界各地玩</li>
+        </ul>
       </div>
-      <img src="我.jpg" alt="個人照片" class="profile-image" />
     </div>
-
-    <h2>學校</h2>
-    <ul>
-      <li>就讀: 南台科技大學</li>
-      <li>科系: 資訊工程系</li>
-    </ul>
-
-    <h2>聯絡方式</h2>
-    <ul>
-      <li>電話: 0972-733-312</li>
-      <li>Email: <a href="mailto:aa0972733312@gmail.com">aa0972733312@gmail.com</a></li>
-    </ul>
-
-    <h2>其他</h2>
-    <ul>
-      <li>愛好: 聽音樂、做手作、打球</li>
-      <li>目標: 找到一份穩定工作、到世界各地玩</li>
-    </ul>
   </div>
 </body>
 </html>
