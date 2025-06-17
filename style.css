@@ -25,13 +25,13 @@ body {
     padding: 20px;  /* 遊戲區域內邊距 */
     margin: 5px;  /* 遊戲區域外邊距 */
   }
-  
+   
   #game-info {
     background-color: rgb(193, 235, 224); /* 遊戲資訊區域背景色 */
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif; 
   }
-  
+   
   #controls {
     background-color: rgb(198, 232, 213); /* 控制區域背景色 */
   }
